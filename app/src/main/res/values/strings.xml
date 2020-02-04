@@ -2,5 +2,6 @@
     <string name="app_name">Flashcard Pro</string>
     <string name="action_settings">Settings</string>
     <string name="noDecksLabel">You currently have no decks. Create one!</string>
+    <string name="chooseDeckName">Name your deck</string>
 
 </resources>

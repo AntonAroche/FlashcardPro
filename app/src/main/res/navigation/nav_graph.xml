@@ -8,5 +8,19 @@
         android:id="@+id/deckFragment"
         android:name="com.example.flashcardpro.decks.DeckFragment"
         android:label="DeckFragment"
-        tools:layout="@layout/deck_fragment"/>
+        tools:layout="@layout/deck_fragment">
+        <action
+            android:id="@+id/action_deckFragment_to_createDeck"
+            app:destination="@id/createDeck" />
+        <argument android:name="deckName" />
+    </fragment>
+    <fragment
+        android:id="@+id/createDeck"
+        android:name="com.example.flashcardpro.decks.CreateDeck"
+        android:label="create_deck_fragment"
+        tools:layout="@layout/create_deck_fragment" >
+        <action
+            android:id="@+id/action_createDeck_to_deckFragment"
+            app:destination="@+id/deckFragment" />
+    </fragment>
 </navigation>
